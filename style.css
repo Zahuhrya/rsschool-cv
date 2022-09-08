@@ -21,3 +21,15 @@ top:85px;
     position:relative;
 
 }
+
+.eng{
+    position: relative;
+    font-size: 50px;
+    left: 25px;
+}
+
+.eng_text{
+    position:relative;
+    font-size:75px;
+    margin-top: 0px;
+}
