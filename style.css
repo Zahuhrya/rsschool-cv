@@ -33,3 +33,19 @@ top:85px;
     font-size:75px;
     margin-top: 0px;
 }
+
+.footer{
+    position:relative;
+    left:70vw;
+
+
+}
+
+.contacts{
+font-size: 50px;
+margin:20px;
+}
+
+.contacts_text{
+    font-size: 25px;
+}
