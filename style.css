@@ -10,3 +10,14 @@
     left:200px;
 top:85px;
 }
+
+.description{
+    position:relative;
+    font-size: 50px;
+    left:25px;
+}
+
+.description_text{
+    position:relative;
+
+}
