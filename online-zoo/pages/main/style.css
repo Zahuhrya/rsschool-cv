@@ -1,5 +1,9 @@
 body{
-    max-width: 1600px;
+    min-width: 1600px;
+}
+
+*{
+    margin:0;
 }
 
 .section_one{
@@ -94,7 +98,7 @@ line-height: 140%;
 
 /* orange */
 
-color: #FFFFFF;
+color: #FE9013;
 
 }
 
@@ -490,12 +494,82 @@ top: 376px;
 
 }
 
+.Animal_box{
+    position: absolute;
+width: 366px;
+height: 366px;
+left: 0px;
+top: 0px;
+overflow: hidden;
+
+}
+
+.Animal_box:hover .Animal_hover_box{
+    bottom: 150px;
+}
+
+.Animal_box:hover .Cards_icon{
+ transform: scale(1.3);
+}
+
+.Hover_title{
+    position: absolute;
+    top: 25px;
+    width: 50%;
+    height: 40px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 140%;
+/* or 22px */
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.Hover_nav{
+    position: absolute;
+    top: 70px;
+    width: 225px;
+    height: 65px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+
+color: #000000; 
+opacity: 1;
+}
+
+
 .Cards_icon{
     position: absolute;
 width: 366px;
 height: 366px;
 left: 0px;
 top: 0px;
+transition: 1s ease-in-out;
+}
+
+.Animal_hover_box{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    width: 366px;
+    height: 125px;
+    background-color: #333B41;
+    opacity: 0.4;
+    bottom: -125px;
+    transition: 1s ease;
+}
+
+.Hover{
+    bottom:175px;
 }
 
 .Cards_text{
