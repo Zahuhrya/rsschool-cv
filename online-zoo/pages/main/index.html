@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online-zoo</title>
     <link rel="stylesheet" href="style.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,7 @@
 <body>
     <section class="section_one">
         <div class="giant_panda_img"></div>
+        <div class="ellipse"></div>
         <header>
             <a href="file:///C:/Users/aolke/Desktop/rsschool-cv/online-zoo/pages/main/index.html" class="logo_header">
                 <h1 class="logo_text">PetStory Online</h1>
@@ -25,7 +26,6 @@
             <a class="header_contact margin_zero">Contact us</a>
             <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="header_design margin_zero">Designed by ©</a>
         </header>
-        <div class="ellipse"></div>
         <p class="text_ellipse margin_zero">Watch your favorite animal online</p>
         <button class="header_button">
             <p class="button_text margin_zero">Watch online</p>
@@ -41,37 +41,73 @@
     <div class="second_img"></div>
     <section class="section_third">
         <div class="section_card margin_left_zero margin_bottom">
+            <div class="Animal_box">
+                <img src="../../assets/images/Pandas.png" class="Cards_icon"> 
+                <div class="Animal_hover_box">
+                    <p class="Hover_title">giant Pandas</p>
+                    <p class="Hover_nav">Native to Southwest China</p>
+                </div>
+            </div>
             <img src="../../assets/images/banana-bamboo_icon.png" class="banana_bamboo_icon">
-            <img src="../../assets/images/Pandas.png" class="Cards_icon">
             <p class="Cards_text margin_zero">giant Pandas</p>
             <p class="Cards_geo margin_zero">Native to Southwest China</p>
         </div>
         <div class="section_card margin_bottom">
-            <img src="../../assets/images/Eagle.png" class="Cards_icon">
+            <div class="Animal_box">
+                <img src="../../assets/images/Eagle.png" class="Cards_icon">
+                <div class="Animal_hover_box">
+                    <p class="Hover_title">Eagles</p>
+                    <p class="Hover_nav">Native to South America</p>
+                </div>
+            </div>
             <img src="../../assets/images/meet-fish_icon.png" class="meat_fish_icon">
             <p class="Cards_text margin_zero">Eagles</p>
             <p class="Cards_geo margin_zero">Native to South America</p>
         </div>
         <div class="section_card margin_bottom">
-            <img src="../../assets/images/Gorilla.png" class="Cards_icon">
+            <div class="Animal_box"> 
+                <img src="../../assets/images/Gorilla.png" class="Cards_icon">
+                <div class="Animal_hover_box">
+                    <p class="Hover_title">Gorillas</p>
+                    <p class="Hover_nav">Native to Congo</p>
+                </div>
+            </div>
             <img src="../../assets/images/banana-bamboo_icon.png" class="meat_fish_icon">
             <p class="Cards_text margin_zero">Gorillas</p>
             <p class="Cards_geo margin_zero">Native to Congo</p>
         </div>
         <div class="section_card margin_left_zero">
-            <img src="../../assets/images/Sloth.png" class="Cards_icon">
+            <div class="Animal_box">
+                <img src="../../assets/images/Sloth.png" class="Cards_icon">
+                <div class="Animal_hover_box">
+                    <p class="Hover_title">Two-toed Sloth</p>
+                    <p class="Hover_nav">Mesoamerica, South America</p>
+                </div>
+            </div>
             <img src="../../assets/images/banana-bamboo_icon.png" class="meat_fish_icon">
             <p class="Cards_text margin_zero">Two-toed Sloth</p>
             <p class="Cards_geo margin_zero">Mesoamerica, South America</p>
         </div>
         <div class="section_card">
-            <img src="../../assets/images/Cheetahs.png" class="Cards_icon">
+            <div class="Animal_box">
+                <img src="../../assets/images/Cheetahs.png" class="Cards_icon">
+                <div class="Animal_hover_box">
+                    <p class="Hover_title">cheetahs</p>
+                    <p class="Hover_nav">Native to Africa</p>
+                </div> 
+            </div>
             <img src="../../assets/images/meet-fish_icon.png" class="meat_fish_icon">
             <p class="Cards_text margin_zero">cheetahs</p>
             <p class="Cards_geo margin_zero">Native to Africa</p>
         </div>
         <div class="section_card">
-            <img src="../../assets/images/Penguins.png" class="Cards_icon">
+            <div class="Animal_box">
+                <img src="../../assets/images/Penguins.png" class="Cards_icon">
+                <div class="Animal_hover_box">
+                    <p class="Hover_title">Penguins</p>
+                    <p class="Hover_nav">Native to Antarctica</p>
+                </div>
+            </div>
             <img src="../../assets/images/meet-fish_icon.png" class="meat_fish_icon">
             <p class="Cards_text margin_zero">Penguins</p>
             <p class="Cards_geo margin_zero">Native to Antarctica</p>
@@ -233,5 +269,6 @@
             </div>
         </a>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
