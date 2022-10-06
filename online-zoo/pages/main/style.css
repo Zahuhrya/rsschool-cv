@@ -1,15 +1,17 @@
 body{
-    min-width: 1600px;
+    max-width: 1600px;
+    overflow-x: hidden;
 }
 
 *{
     margin:0;
+    box-sizing: border-box;
 }
 
 .section_one{
     position: absolute;
     height: 780px;
-    left: 0px;
+    width: 100vw;
     right: 0px;
     top: 0px;
 }
@@ -19,21 +21,23 @@ a{
 
 .giant_panda_img{
     position: absolute;
-    width: 1600px;
+    width: 100%;
 height: 780px;
 left: 0px;
-right: 0px;
 top: 0px;
 
 background: url('../../assets/images/Giant\ Panda.png');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
 }
 
 header{
-    position: absolute;
-    display: inline-block;
-    width: 1600px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
     height: 80px;
-    left: 0px;
+    right: 0px;
     top: 0px;
     
     background: #000000;
@@ -462,7 +466,7 @@ bottom: 43.55%;
     position: absolute;
 width: 62px;
 height: 62px;
-right: 1400px;
+left: 138px;
 top: 1906px;
 
 }
@@ -741,7 +745,6 @@ color: #FE9013;
 
 .Block_text_one{
     position: absolute;
-width: 843px;
 height: 29px;
 left: calc(50% - 843px/2 - 59.5px);
 top: 198px;
@@ -1702,20 +1705,16 @@ line-height: 140%;
 color: #FFFFFF;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1599px) {
     .section_one{
-        position: absolute;
     height: 584px;
-    left: 0px;
-    right: 0px;
-    top: 0px;
 
     }
 
     header{
         position: absolute;
     height: 80px;
-    width: 1000px;
+    width: 100%;
     left: 0px;
     right: 0px;
     top: 0px;
@@ -1813,7 +1812,6 @@ text-transform: uppercase;
 
     .giant_panda_img{
         position: absolute;
-        width: 1000px;
     height: 584px;
     left: 0px;
     top: 0px;
@@ -1827,11 +1825,13 @@ text-transform: uppercase;
     }
 
     .section_second{
-        position: absolute;
+        position: relative;
     height: 427px;
-    left: 30px;
-    right: 30px;
+    max-width: 940px;
+    left: 0px;
+    right: 0px;
     top: 684px;
+    margin: 0 auto;
     }
 
     .bamboo_hat{
@@ -1885,11 +1885,12 @@ top: 295px;
     }
 
     .section_third{
-        position: absolute;
+        position: relative;
 height: 801px;
-left: 30px;
-right: -295px;
-top: 1253px;
+max-width: 960px;
+margin: 0 auto;
+left: 0px;
+top: 830px;
     }
 
     .section_card{
@@ -1985,7 +1986,7 @@ color: #000000;
         position: absolute;
 width: 62px;
 height: 62px;
-left: 353px;
+left: 40%;
 top: 1622px;
     }
 
@@ -1993,7 +1994,7 @@ top: 1622px;
         position: absolute;
 width: 62px;
 height: 62px;
-left: 576px;
+left: 55%;
 top: 1622px;
 
     }
@@ -2049,9 +2050,11 @@ opacity: 0.9;
     .Pick_and_feed_block{
         position: absolute;
 height: 796px;
+max-width: 940px;
 left: 30px;
 right: 30px;
 top: 30px;
+margin: 0 auto;
 
 background: rgba(253, 253, 255, 0.52);
 backdrop-filter: blur(2px);
@@ -2062,9 +2065,9 @@ border-radius: 20px;
 
     .Block_name{
         position: absolute;
-width: 463px;
+width: 100%;
 height: 58px;
-left: calc(50% - 463px/2 + 0.5px);
+left: 0px;
 top: 60px;
 
 font-family: 'Roboto';
@@ -2082,9 +2085,6 @@ color: #FE9013;
     .Block_text_one{
         position: absolute;
 height: 29px;
-width: 843px;
-left: 79px;
-right: 78px;
 top: 138px;
 
 /* subtitle */
@@ -2099,14 +2099,15 @@ line-height: 120%;
 
 color: #333B41;
 
+max-width: 1061px;
+    margin: 0 auto;
+    padding-left: 50px;
+
     }
 
     .Block_text_two{
         position: absolute;
 height: 42px;
-width: 813px;
-left: 79px;
-right: 108px;
 top: 187px;
 
 font-family: 'Roboto';
@@ -2118,14 +2119,15 @@ line-height: 130%;
 
 
 color: #333B41;
+letter-spacing: 0.1px;
+max-width: 940px;
+    margin: 0 auto;
+    padding-left: 50px;
     }
 
     .Block_text_third{
         position: absolute;
 height: 42px;
-width: 823px;
-left: 79px;
-right: 98px;
 top: 239px;
 
 font-family: 'Roboto';
@@ -2138,13 +2140,17 @@ line-height: 130%;
 
 color: #333B41;
 
+max-width: 1061px;
+    margin: 0 auto;
+    padding-left: 50px;
+
     }
 
     .Block_underline{
         position: absolute;
 width: 178px;
 height: 1px;
-left: calc(50% - 178px/2 - 181px);
+left: calc(50% - 195px/2 - 181px);
 top: 280px;
     }
 
@@ -2190,7 +2196,7 @@ border-radius: 5px;
         position: absolute;
 width: 69px;
 height: 35.08px;
-left: 317px;
+left: calc(50% - 200px/2 - 79.5px);
 top: 469.52px;
     }
 
@@ -2198,7 +2204,7 @@ top: 469.52px;
         position: absolute;
 width: 69px;
 height: 35.08px;
-left: 614px;
+left: calc(50% + 120px);
 top: 469px;
     }
 
@@ -2289,17 +2295,15 @@ border-radius: 20px;
 
     .leav_img{
         position: absolute;
-width: 239.98px;
-height: 235.62px;
 right: 0px;
 top: 3807.76px;
     }
 
     footer{
         position: absolute;
-width: 1000px;
+width: 100%;
 height: 443px;
-left: calc(50% - 1000px/2);
+left: 0px;
 top: 4046px;
 
 background: #111115;
@@ -2495,16 +2499,19 @@ top: 83px;
     }
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:999px) {
     header{
-        position: absolute;
+        position: fixed;
 height: 34px;
-width: 640px;
-left: 0px;
-right: 0px;
-top: 0px;
+width: 100%;
+z-index: 20;
+
 
 background: #111115;
+    }
+
+    .section_one{
+        height: 385px;
     }
 
     .logo_header{
@@ -2578,11 +2585,15 @@ transform: matrix(-0.9, 0.52, 0.4, 0.88, 0, 0);
 
     .giant_panda_img{
         position: absolute;
-height: 373px;
+height: 385px;
 left: 0px;
 top: 0px;
 
 background: url(../../assets/images/Giant\ Panda\ tablet.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+
     }
 
     .header_button{
@@ -2625,11 +2636,11 @@ color: #FFFFFF;
     }
 
     .section_second{
-        position: absolute;
+        position: relative;
 height: 367px;
-left: 20px;
-right: 125px;
+margin: 0 auto;
 top: 433px;
+max-width: 600px;
 
     }
 
@@ -2685,7 +2696,7 @@ color: #333B41;
         position: absolute;
 width: 213px;
 height: 29px;
-left: calc(50% - 213px/2 - 137px);
+left: 0px;
 top: 208px;
 
 /* subtitle */
@@ -2705,6 +2716,7 @@ color: #333B41;
     .second_text4{
         position: absolute;
 height: 110px;
+width: 500px;
 left: 0px;
 right: 0px;
 top: 257px;
@@ -2725,18 +2737,20 @@ color: #333B41;
     .second_img{
         visibility: visible;
         position: absolute;
-width: 231px;
-height: 476px;
-left: 512px;
-top: 368px;
+height: 484px;
+width: 132px;
+right: 0px;
+top: 380px;
+
+background: url(../../assets/images/flower_foto2.png);
     }
 
     .section_third{
-        position: absolute;
+        position: relative;
 height: 756px;
-left: 20px;
-right: -610px;
-top: 880px;
+width: 600px;
+top: 510px;
+margin: 0 auto;
     }
 
     .section_card{
@@ -2748,6 +2762,18 @@ left: 0px;
 top: 0px;
 
 border-radius: 3.89671px;
+    }
+
+    .section_card:nth-child(5), .section_card:nth-child(6) {
+        display: none;
+    }
+
+    .section_card:nth-child(3){
+        margin: 0;
+    }
+
+    .section_card:nth-child(4){
+        margin-left: 30px;
     }
 
     .banana_bamboo_icon{
@@ -2825,7 +2851,8 @@ color: #000000;
         position: absolute;
 width: 62px;
 height: 62px;
-left: 243px;
+left:unset;
+right: 52%;
 top: 1223px;
     }
 
@@ -2833,7 +2860,7 @@ top: 1223px;
         position: absolute;
 width: 62px;
 height: 62px;
-left: 335px;
+left: 52%;
 top: 1223px;
 
     }
@@ -2888,9 +2915,10 @@ top: 20px;
     .Pick_and_feed_block{
         position: absolute;
 height: 741px;
+max-width: 600px;
 left: 0px;
 right: 0px;
-top: 30px;
+top: 20px;
 
 background: rgba(253, 253, 255, 0.52);
 backdrop-filter: blur(2px);
@@ -2922,9 +2950,10 @@ color: #FE9013;
         position: absolute;
 height: 52px;
 width: 600px;
-left: 20px;
+left: 0px;
 right: 0px;
 top: 100px;
+padding-left: 0;
 
 font-family: 'Roboto';
 font-style: normal;
@@ -2941,9 +2970,10 @@ color: #333B41;
         position: absolute;
 height: 42px;
 width: 600px;    
-left: 20px;
+left: 0px;
 right: 0px;
 top: 172px;
+padding-left: 0;
 
 font-family: 'Roboto';
 font-style: normal;
@@ -2958,12 +2988,19 @@ color: #333B41;
     }
 
     .Block_text_third{
-        position: absolute;
+        position: relative;
 width: 600px;
 height: 42px;
-left: 20px;
+left: 0px;
 top: 224px;
+margin: 0 auto;
+padding-left: 0;
 
+    }
+
+    .Block_underline{
+        left: calc(50% + 55px);
+    top: 265px;
     }
 
     .Block_How{
@@ -3033,11 +3070,13 @@ top: 647px;
     }
 
     .section_fifth{
-        position:absolute;
-        top: 2691px;
-        height: 434px;
-        width: 640px;
-        left: 0;
+        position: relative;
+    top: 1560px;
+    height: 434px;
+    width: 640px;
+    margin: 0 auto;
+    right:unset;
+    left: unset;
     }
 
     .Testimonials_first{
@@ -3132,16 +3171,16 @@ top: 477px;
 
     .leav_img{
         position: absolute;
-width: 149.88px;
-height: 147.15px;
-left: 490px;
-top: 3200px;
+    width: 130px;
+    height: 203px;
+    right: 0px;
+    top: 3165px;
     }
 
     footer{
         position: absolute;
 height: 282px;
-width: 640px;
+width: 100%;
 left: 0px;
 top:3299px;
 
@@ -3158,11 +3197,12 @@ background: #111115;
 
     .logo_footer{
         position: absolute;
-width: 82px;
-height: 52px;
+        width: 82px;
+        height: 52px;
 left: 22px;
 top: 14px;
     }
+    
 
     .button_footer{
         position: absolute;
@@ -3193,7 +3233,7 @@ line-height: 140%;
 
 
 /* orange */
-
+color: #E47209;
     }
 
     .footer_map{
@@ -3294,14 +3334,16 @@ color: #FFFFFF;
     .facebook{position: absolute;
         width: 26px;
         height: 26px;
-        left: 595px;
+        right: 20px;
+        left: unset;
         top: 13px;}
 
     .twiter{
         position: absolute;
         width: 26px;
         height: 26px;
-        left: 595px;
+        right: 20px;
+        left: unset;
         top: 59px;
     }
 
@@ -3309,7 +3351,8 @@ color: #FFFFFF;
         position: absolute;
 width: 26px;
 height: 26px;
-left: 595px;
+right: 20px;
+left: unset;
 top: 105px;
 
     }
@@ -3318,10 +3361,260 @@ top: 105px;
         position: absolute;
 width: 26px;
 height: 26px;
-left: 595px;
+right: 20px;
+left: unset;
 top: 151px;
 
     }
 
     .footer_text{visibility: hidden;}
+}
+
+@media screen and (max-width:639px) {
+    .section_one{
+        height: 233px;
+    }
+
+    .giant_panda_img{
+        height: 233px;
+        background: url(../../assets/images/Giant\ Panda.png);
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+
+    .ellipse{
+        width: 119px;
+    height: 119px;
+    right: 273px;
+    top: 68px;
+    }
+
+    .text_ellipse{
+        font-size: 28px;
+        line-height: 75%;
+        width: 126px;
+        height: 109px;
+        top: 88px;
+        left: calc(50% - 295px/2 + 176.76px);
+    }
+
+    .header_button{
+        position: relative;
+        margin: 0 auto;
+        left: calc(50% - 2px/2 - 140px);
+        top: 250px;
+    }
+
+    .section_second{
+        max-width: 300px;
+        top: 340px;
+    }
+
+    .second_text{
+        max-width: 300px;
+        height: unset;
+        font-size: 24px;
+    line-height: 120%;
+    left: 4px;
+    }
+
+    .second_text2{
+        max-width: 300px;
+        height: unset;
+        left: 4px;
+        top: 68px;
+    }
+
+    .second_text3{
+        max-width: 300px;
+        height: unset;
+        font-size: 24px;
+    line-height: 120%;
+    left: 4px;
+    top: 150px;
+    }
+
+    .second_text4{
+        max-width: 300px;
+        height: unset;
+        left: 4px;
+        top: 190px; 
+    }
+
+    .second_img{
+        width: 35px;
+        height: 225px;
+        background: url(../../assets/images/flower_foto3.png);
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 260px;
+    }
+
+    .section_third{
+        width: 285px;
+        height: 1540px;
+        top: 400px;
+    }
+
+    .section_card{
+        margin: 0;
+    }
+
+    .margin_left_zero{
+        margin-left: 0;
+    }
+
+    .margin_bottom{
+        margin-bottom: 20px;
+    }
+
+    .nav_choose_left{
+        display: none;
+    }
+
+    .nav_choose_right{
+        display: none;
+    }
+    .section_card:nth-child(3) {
+        margin-bottom: 20px;
+    }
+
+
+    .section_card:nth-child(4) {
+        margin-left: 0px;
+    }
+
+    .strelitzia{
+        top: 2300px;
+        width: 68px;
+        height: 71px;
+        background: url(../../assets/images/strelitzia\ 4.png);
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+
+    .palm{
+        top: 2300px;
+        width: 68px;
+        height: 71px;
+        left: unset;
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+
+    .Choose_your_favorite{
+        top:2280px;
+    }
+
+    .section_fourth{
+        top: 2371px;
+        height: 1082px;
+    }
+
+    .Pick_and_feed_block{
+        width: 300px;
+        height: 1042px;
+    }
+
+    .Block_name{
+        width: 300px;
+        font-size: 24px;
+    line-height: 120%;
+    left: calc(50% - 300px/2 + 0.5px);
+
+    }
+
+    .Block_text_one{
+        width: 300px;
+        font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    }
+
+    .Block_text_two{
+        display: none;
+    }
+
+    .Block_text_third{
+        display: none;
+    }
+
+    .Block_underline{
+        display: none;
+    }
+
+    .Block_How{
+        width: 300px;
+        left: calc(50% - 300px/2 + 0.5px);
+        text-align: center;
+        top: 180px;
+        font-size: 24px;
+    line-height: 120%;
+    }
+
+    .Widget_one{
+        position: relative;
+        height: 202px;
+        margin: 0 auto;
+        left: unset;
+        margin-bottom: 34px;
+        top: 230px;
+    }
+
+    .Widget_two{
+        position: relative;
+        margin: 0 auto;
+        left: unset;
+        margin-bottom: 34px;
+        top: 230px;
+    }
+
+    .Widget_three{
+        position: relative;
+        margin: 0 auto;
+        left: unset;
+        margin-bottom: 34px;
+        top: 230px;
+    }
+
+    .Widget_text{
+        top: 176px;
+    }
+
+    .Block_button{
+        top: 990px;
+    }
+
+    .section_fifth{
+        width: 300px;
+    }
+
+    .Testimonials_first{
+        width: 300px;
+        left: 0px;
+    }
+
+    .Testimonials_second{
+        width: 300px;
+        left: 0px;
+    }
+
+    .Testimonials_third{
+        width: 300px;
+        left: 0px;
+    }
+
+    .leav_img{
+        width: 54px;
+        height: 94px;
+        top: 3980px;
+    }
+
+    footer{
+        top: 4050px;
+    }
 }
