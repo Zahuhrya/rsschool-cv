@@ -1487,7 +1487,7 @@ top: 83px;
 @media screen and (max-width:999px) {
     header{
         position: fixed;
-    z-index: 20;
+        z-index: 20;
         height: 34px;
         width: 100%;
     }
