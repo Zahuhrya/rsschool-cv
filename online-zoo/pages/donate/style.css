@@ -6,6 +6,10 @@ body{
     margin:0;
 }
 
+html{
+     overflow:  hidden; 
+    }
+
 header{
     position: absolute;
     display: inline-block;
@@ -1482,6 +1486,8 @@ top: 83px;
 
 @media screen and (max-width:999px) {
     header{
+        position: fixed;
+    z-index: 20;
         height: 34px;
         width: 100%;
     }
@@ -1860,9 +1866,9 @@ line-height: 130%;
 color: #FFFFFF;
     }
 
-    .subscribe{visibility: hidden;}
-    .footer_button{visibility: hidden;}
-    .input_footer{visibility: hidden;}
+    .subscribe{display: none;}
+    .footer_button{display: none;}
+    .input_footer{display: none;}
 
     .facebook{position: absolute;
         width: 26px;
@@ -1900,7 +1906,7 @@ top: 151px;
 
     }
 
-    .footer_text{visibility: hidden;}
+    .footer_text{display: none;}
 }
 
 @media screen and (max-width:639px) {
