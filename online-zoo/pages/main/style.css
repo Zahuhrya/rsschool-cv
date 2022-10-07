@@ -1,6 +1,6 @@
 body{
-    max-width: 1600px;
     overflow-x: hidden;
+    max-width: 1600px;
 }
 
 *{
@@ -11,7 +11,7 @@ body{
 .section_one{
     position: absolute;
     height: 780px;
-    width: 100vw;
+    width: 100%;
     right: 0px;
     top: 0px;
 }
@@ -286,6 +286,7 @@ a:hover{color:#FE9013;
     display: flex;
     flex-direction: column;
 height: 403px;
+width: 100%;
 left: 219px;
 right: 220px;
 top: 920px;
@@ -1881,7 +1882,7 @@ top: 295px;
     }
 
     .second_img{
-        visibility: hidden;
+        display: none;
     }
 
     .section_third{
@@ -2282,7 +2283,7 @@ border-radius: 20px;
     }
 
     .Testimonials_fourth{
-        visibility: hidden;
+        display: none;
     }
 
     .Button_feedback{
@@ -2501,10 +2502,11 @@ top: 83px;
 
 @media screen and (max-width:999px) {
     header{
-        position: fixed;
+    position: fixed;
+    z-index: 20;
 height: 34px;
 width: 100%;
-z-index: 20;
+
 
 
 background: #111115;
@@ -2560,27 +2562,27 @@ transform: matrix(-0.9, 0.52, 0.4, 0.88, 0, 0);
     }
 
     .header_about{
-        visibility: hidden;
+        display: none;
     }
 
     .header_contact{
-        visibility: hidden;
+        display: none;
     }
 
     .header_design{
-        visibility: hidden;
+        display: none;
     }
 
     .header_donate{
-        visibility: hidden;
+        display: none;
     }
 
     .header_map{
-        visibility: hidden;
+        display: none;
     }
 
     .header_zoos{
-        visibility: hidden;
+        display: none;
     }
 
     .giant_panda_img{
@@ -2647,7 +2649,7 @@ max-width: 600px;
     .bamboo_hat{
         width: 0;
         height: 0;
-        visibility: hidden;
+        display: none;
     }
 
     .second_text{
@@ -3055,10 +3057,10 @@ border-radius: 5px;
     }
 
     .Block_arrow_first{
-        visibility: hidden;
+        display: none;
     }
 
-    .Block_arrow_second{visibility: hidden;}
+    .Block_arrow_second{display: none;}
 
     .Block_button{
         position: absolute;
@@ -3154,11 +3156,11 @@ color: #4F4F4F;
     }
 
     .line_scroll{
-        visibility: hidden;
+        display: none;
     }
 
     .line_scroll_active{
-        visibility: hidden;
+        display: none;
     }
 
     .Button_feedback{
@@ -3327,9 +3329,9 @@ line-height: 130%;
 color: #FFFFFF;
     }
 
-    .subscribe{visibility: hidden;}
-    .footer_button{visibility: hidden;}
-    .input_footer{visibility: hidden;}
+    .subscribe{display: none;}
+    .footer_button{display: none;}
+    .input_footer{display: none;}
 
     .facebook{position: absolute;
         width: 26px;
@@ -3367,7 +3369,7 @@ top: 151px;
  
     }
 
-    .footer_text{visibility: hidden;}
+    .footer_text{display: none;}
 }
 
 @media screen and (max-width:639px) {
