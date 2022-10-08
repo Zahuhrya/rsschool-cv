@@ -307,6 +307,7 @@ backdrop-filter: blur(2px);
 .second_text{
     position: absolute;
 height: 116px;
+    max-width: 465px;
 left: 696px;
 right: 0px;
 top: 0px;
@@ -327,6 +328,7 @@ color: #333B41;
 .second_text2{
     position: absolute;
     height: 42px;
+    max-width: 465px;
     left: 696px;
     right: 0px;
     top: 136px;
@@ -367,6 +369,7 @@ color: #333B41;
 .second_text4{
     position: absolute;
 height: 105px;
+    max-width: 465px;
 left: 696px;
 right: 0px;
 top: 295px;
@@ -2737,7 +2740,7 @@ color: #333B41;
     }
 
     .second_img{
-        visibility: visible;
+        display:block;
         position: absolute;
 height: 484px;
 width: 132px;
