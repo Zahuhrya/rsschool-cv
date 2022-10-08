@@ -5,8 +5,6 @@ body{
 *{
     margin:0;
 }
-
-
 header{
     position: absolute;
     display: inline-block;
@@ -36,8 +34,8 @@ top: 14px;
 
 position: absolute;
 width: 72.49px;
-height: 44.91px;
-left: 4.75px;
+height: 45px;
+left: 5px;
 top: 3.55px;
 
 font-family: 'Roboto';
