@@ -1,7 +1,6 @@
 const circles = document.querySelectorAll(".circle")
 const circle_strokes = document.querySelectorAll(".circle_stroke")
 const prices = document.querySelectorAll(".price")
-let ind = 0;
 circles.forEach(element => element.addEventListener('click',()=>{
     let ind = Number(element.id);
     for(var i = 0; i < circles.length; i++){
