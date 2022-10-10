@@ -1,0 +1,21 @@
+const circles = document.querySelectorAll(".circle")
+const circle_strokes = document.querySelectorAll(".circle_stroke")
+const prices = document.querySelectorAll(".price")
+let ind = 0;
+circles.forEach(element => element.addEventListener('click',()=>{
+    let ind = Number(element.id);
+    for(var i = 0; i < circles.length; i++){
+        circle_strokes[i].classList.remove('active_stroke');
+        prices[i].classList.remove('active');
+    }
+    if(screen.width > 1599){
+        prices[ind].classList.add("active")
+    }else if(screen.width < 1599 && screen.width>999){
+        prices[ind+1].classList.add("active")
+    } else if(screen.width < 999) {
+        prices[ind+3].classList.add("active")
+    }
+
+    circle_strokes[element.id].classList.add("active_stroke")
+
+}));
