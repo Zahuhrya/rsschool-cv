@@ -490,6 +490,7 @@ background: #FFEE2E;
     width: 40px;
     height: 40px;
     background:url("../../assets/images/roller_icon.png");
+    display: none;
 
   }
 
@@ -524,6 +525,10 @@ text-transform: uppercase;
 
   .active{
     color: #FE9013;
+  }
+
+  .active_stroke{
+    display: block;
   }
 
   .PaF_share{
