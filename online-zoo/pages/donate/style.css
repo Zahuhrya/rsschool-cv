@@ -33,7 +33,7 @@ top: 14px;
     box-sizing: border-box;
 
 position: absolute;
-width: 72.49px;
+width: 72.5px;
 height: 45px;
 left: 5px;
 top: 3.55px;
@@ -484,11 +484,11 @@ background: #FFEE2E;
   cursor: pointer;
   }
   .circle_stroke{
+      display: none;
     position: absolute;
     width: 40px;
     height: 40px;
     background:url("../../assets/images/roller_icon.png");
-    display: none;
 
   }
 
