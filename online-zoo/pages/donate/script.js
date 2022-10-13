@@ -40,7 +40,7 @@ input.addEventListener('input',()=>{
                 circle_strokes[Number(elements.id)].classList.add("active_stroke")
                 let value = prices[index].textContent;
             }else if(screen.width < 1599 && screen.width>999){
-                prices[index+1].classList.add("active")
+                prices[index].classList.add("active")
                 circle_strokes[Number(elements.id)-1].classList.add("active_stroke")
             } else if(screen.width < 999) {
                 prices[index].classList.add("active")
