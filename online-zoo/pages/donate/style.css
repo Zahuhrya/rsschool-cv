@@ -262,6 +262,24 @@ color: #333B41;
 .burger{
     color: #E47209;
 }
+
+.burger_button_close{
+    display: block;
+    background-image: url(../../assets/images/burger_cross.png);
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+width: 18px;
+height: 10px;
+right: 20px;
+top: 11px;
+z-index: 25;
+}
+
+.burger_button_close:hover{
+    cursor: pointer;
+}
 .header_map{
     position: absolute;
 width: 32px;
