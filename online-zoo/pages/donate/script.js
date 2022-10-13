@@ -46,10 +46,6 @@ input.addEventListener('input',()=>{
                 prices[index].classList.add("active")
                 circle_strokes[Number(elements.id)-3].classList.add("active_stroke")
             }
-        } else{
-            for(var i = 0; i < circles.length; i++){
-        circle_strokes[i].classList.remove('active_stroke');
-        prices[i].classList.remove('active');
         }
     }
 })
