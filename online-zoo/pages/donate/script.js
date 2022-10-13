@@ -14,15 +14,15 @@ circles.forEach(element => element.addEventListener('click',(event)=>{
     if(screen.width > 1599){
         prices[ind].classList.add("active");
         let values = prices[ind].textContent;
-        input.value = values;
+        input.value = values.replace(/\$/g,'');
     } else if(screen.width < 1599 && screen.width > 999){
         prices[ind+1].classList.add("active");
         let values = prices[ind+1].textContent;
-        input.value = values;
+        input.value = values.replace(/\$/g,'');
     } else if(screen.width < 999) {
         prices[ind+3].classList.add("active");
         let values = prices[ind+3].textContent;
-        input.value = values;
+        input.value = values.replace(/\$/g,'');
     }
     circle_strokes[element.id].classList.add("active_stroke")
 }));
