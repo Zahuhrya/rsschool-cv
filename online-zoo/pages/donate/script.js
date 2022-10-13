@@ -2,7 +2,10 @@ const circles = document.querySelectorAll(".circle")
 const circle_strokes = document.querySelectorAll(".circle_stroke")
 const prices = document.querySelectorAll(".price")
 const input = document.querySelector(".PaF_input")
-circles.forEach(element => element.addEventListener('click',()=>{
+const wrapper = document.querySelector(".burger_wrapper")
+const button = document.querySelector(".burger_button")
+const burger_close = document.querySelector(".burger_close_zone")
+circles.forEach(element => element.addEventListener('click',(event)=>{
     let ind = Number(element.id);
     for(var i = 0; i < circles.length; i++){
         circle_strokes[i].classList.remove('active_stroke');
@@ -21,9 +24,7 @@ circles.forEach(element => element.addEventListener('click',()=>{
         let values = prices[ind+3].textContent;
         input.value = values;
     }
-
     circle_strokes[element.id].classList.add("active_stroke")
-
 }));
 
 input.addEventListener('input',()=>{
@@ -47,4 +48,12 @@ input.addEventListener('input',()=>{
             }
         }
     }
+})
+
+button.addEventListener('click',()=>{
+    wrapper.style.display = 'block';
+})
+
+burger_close.addEventListener('click',()=>{
+    wrapper.style.display = 'none';
 })
