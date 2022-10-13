@@ -5,6 +5,7 @@ const input = document.querySelector(".PaF_input")
 const wrapper = document.querySelector(".burger_wrapper")
 const button = document.querySelector(".burger_button")
 const burger_close = document.querySelector(".burger_close_zone")
+const burg_button = document.querySelector(".burger_button_close")
 circles.forEach(element => element.addEventListener('click',(event)=>{
     let ind = Number(element.id);
     for(var i = 0; i < circles.length; i++){
@@ -38,7 +39,6 @@ input.addEventListener('input',()=>{
             if(screen.width > 1599){
                 prices[index].classList.add("active")
                 circle_strokes[Number(elements.id)].classList.add("active_stroke")
-                let value = prices[index].textContent;
             }else if(screen.width < 1599 && screen.width>999){
                 prices[index].classList.add("active")
                 circle_strokes[Number(elements.id)-1].classList.add("active_stroke")
@@ -55,5 +55,9 @@ button.addEventListener('click',()=>{
 })
 
 burger_close.addEventListener('click',()=>{
+    wrapper.style.display = 'none';
+})
+
+burg_button.addEventListener('click',()=>{
     wrapper.style.display = 'none';
 })
