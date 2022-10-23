@@ -23,7 +23,7 @@ circles.forEach(element => element.addEventListener('click',(event)=>{
     } else if(screen.width < 999) {
         prices[ind+3].classList.add("active");
         let values = prices[ind+3].textContent;
-        input.value = values;
+        input.value = values.replace(/\$/g,'');
     }
     circle_strokes[element.id].classList.add("active_stroke")
 }));
