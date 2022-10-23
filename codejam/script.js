@@ -44,6 +44,8 @@ const buttonP = document.createElement('button');
 const buttonS = document.createElement('button');
 buttonP.classList.add('play');
 buttonS.classList.add('stop');
+buttonP.innerHTML="Shuffle and Start"
+buttonS.innerHTML="Stop"
 dots.innerHTML=':';
 secondel.innerHTML='00';
 minuteel.innerHTML="00"
@@ -148,6 +150,11 @@ for (let i=1;i<=15;i++){
     cell.addEventListener('click',()=>{
         move(i);
         match(i);
+        if(!isStarted){
+            isStarted=true;
+            clearInterval(interval);
+            interval=setInterval(StartTimer,1000);  
+        }
     })
 }
 

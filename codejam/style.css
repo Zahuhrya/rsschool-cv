@@ -1,6 +1,6 @@
 body{
     background: linear-gradient(#e66465, #9198e5);
-
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -31,61 +31,99 @@ body{
 .second{
     position: relative;
     width: 25px;
-    top: -78px;
-    left: 125px;
+    top: -124px;
+    left: 122px;
     margin: 0 auto;
-    font-size: large;
+    font-size: 25px;
 }
 .dot{
     position: relative;
     width: 25px;
     margin: 0 auto;
     left: 115px;
-    top: -58px;
-    font-size: large;
+    top: -98px;
+    font-size: 25px;
 }
 .minute{
     position: relative;
     width: 25px;
-    top: -36px;
+    top: -68px;
     margin: 0 auto;
-    font-size: large;
     left: 90px;
+    font-size: 25px;
 }
 
 .Timer{
     position: relative;
     width: 25px;
     margin: 0 auto;
-    font-size: large;
-    top: 5px;
-    left: 45px;
+    top: -20px;
+    left: 30px;
+    font-size: 25px;
 }
 
 .play{
     position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: aqua;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 40px;
+    background-color: burlywood;
+    border: 0px;
+    border-radius: 10px;
+    top: -110px;
+    left: -110px;
+    font-size: large;
 }
 
 .stop{
     position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: greenyellow;
+    display: block;
+    width: 150px;
+    height: 40px;
+    background-color: burlywood;
+    border: 0px;
+    border-radius: 10px;
+    top: -150px;
+    margin: 0 auto;
+    left: 110px;
+    font-size: large;
+}
+
+.play:hover{
+    background-color: blanchedalmond;
+    border: 2px solid green;
+}
+
+.stop:hover{
+    background-color: blanchedalmond;
+    border: 2px solid green;
+}
+
+.play:active{
+    background-color: lime;
+}
+
+.stop:active{
+    background-color: lime;
 }
 .Moves{
     position: relative;
     width: 25px;
     height: 21px;
     margin: 0 auto;
+    font-size: 25px;
+    top: -48px;
+    left: -40px;
 }
 
 .Movestxt{
     position: relative;
     width: 15px;
     margin: 0 auto;
+    left: -125px;
+    top: 7px;
+    font-size: 25px;
 }
 
 .Title{
