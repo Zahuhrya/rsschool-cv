@@ -4,7 +4,7 @@ const Timer = document.createElement('div');
 Timer.classList.add('Timer');
 Timer.innerText='Time'
 let cellsize = 100;
-if(screen.width<440){
+if(screen.width<768){
     cellsize = 62.5;
 }
 const Moves = document.createElement('div');
