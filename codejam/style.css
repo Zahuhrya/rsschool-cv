@@ -146,5 +146,30 @@ body{
     font-size: large;
 }
 
+@media screen and (width<440px) {
+    .Title{
+        font-size: 25px;
+        width: 100px;
+        height: 58px;
+    }
+    .field{
+        width: 250px;
+        height: 250px;
+    }
 
+    .cell{
+        width: 62.5px;
+    height: 62.5px;
+    }
 
+    .play{
+        width: 75px;
+        font-size: 15px;
+        left: -20%;
+    }
+    .stop{
+        left: 15%;
+        width: 75px;
+        font-size: 15px;
+    }
+}
