@@ -115,39 +115,42 @@ function move(index){
     empty.top=cell.top;
     cell.left=emptyLeft;
     cell.top=emptyTop;
+    console.log(cells)
 
     movesCount++
     Moves.innerText= movesCount;
 
 
     const ifFinished=cells.every(cell=>{
-        cell.value===cell.top*4+cell.left+1;
+    cell.value == cell.top*4+cell.left+1
     })
+    console.log(ifFinished)
 
-    if(ifFinished){
+    if(ifFinished===true){
         alert('Hooray! You solved the puzzle in '+minute+':'+second+' and '+movesCount+' moves!')
     }
     if(Check.checked){
+        Audio.currentTime = 0;
         Audio.play()
     }
 }
 for (let i=1;i<=15;i++){
     var cell = document.createElement('div')
-    const value =numbers[i-1]+1;
+    const values =numbers[i-1]+1;
     cell.setAttribute('class','cell')
-    cell.innerHTML = value;
+    cell.innerHTML = values;
     let left= i %4;
     let top =(i -left )/4;
     cells.push({
         left:left,
         top:top,
         element:cell,
-        value:value
+        value:values
     });    
     
     cell.style.left = `${left * cellsize}px`;
     cell.style.top = `${top * cellsize}px`;
-    
+    console.log(cells)
     field.append(cell);
     match(i)
     cell.addEventListener('click',()=>{
@@ -160,8 +163,6 @@ for (let i=1;i<=15;i++){
         }
     })
 }
-
-
 buttonP.addEventListener('click',()=>{
     empty={
         value:16,
