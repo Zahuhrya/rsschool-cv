@@ -146,7 +146,7 @@ body{
     font-size: large;
 }
 
-@media screen and (width<440px) {
+@media screen and (width<768px) {
     .Title{
         font-size: 25px;
         width: 100px;
