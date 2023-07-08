@@ -25,3 +25,7 @@ function persistence(num) {
 ```
 
 #6. I don't have experience
+
+#7. Average
+
+#8. B1
